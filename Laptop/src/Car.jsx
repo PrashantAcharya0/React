@@ -14,7 +14,7 @@ const Car = (props) => {
         color: "blue",
         // border: "1px solid black",
         boxShadow:
-          props.edition >= "Special"
+          props.edition === "Special Edition"
             ? "0 0 15px 5px rgba(255, 165, 0, 0.75)"
             : "0 6px 16px rgba(0, 0, 0, 0.15)",
       }}
@@ -28,7 +28,7 @@ const Car = (props) => {
       <h4>{props.Model}</h4>
       <h4>{props.price}</h4>
       <h4>{props.edition}</h4>
-      {props.edition >= "Special" }
+      {props.edition === "Special Edition"}
     </div>
   );
 };
