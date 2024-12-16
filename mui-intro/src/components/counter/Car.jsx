@@ -8,7 +8,6 @@ const Person = () => {
   const [BrandName, setBrandName] = useState("Toyota");
   const [ModelName, setModelName] = useState("GR86");
 
-  //   let college = "kec";
   return (
     <Box>
       <Typography variant="h4" color="primary">
