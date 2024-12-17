@@ -12,6 +12,9 @@ import Actors from "./components/counter/Actors";
 const App = () => {
   return (
     <div>
+      {/* <Actors /> */}
+      {/* <Animal /> */}
+      {/* <Student /> */}
       <Actors />
     </div>
   );

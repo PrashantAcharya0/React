@@ -16,6 +16,10 @@ const Actors = () => {
       id: 3,
       name: "Biraj Bhatta",
     },
+    {
+      id: 4,
+      name: "Dayahang Rai",
+    },
   ]);
   return (
     <Box>
@@ -30,7 +34,7 @@ const Actors = () => {
             </Typography>
 
             <Button
-              variant="outlined"
+              variant="contained"
               color="error"
               endIcon={<DeleteOutlineOutlinedIcon />}
               onClick={() => {

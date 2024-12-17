@@ -2,28 +2,42 @@ import { Box, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 
 const Animal = () => {
-  let [text, setText] = useState("random text");
+  let [text1, setText1] = useState("Random text");
+  let [text2, setText2] = useState("Another text ");
+  let [text3, setText3] = useState("Don't text");
   return (
     <Box>
-      <Typography variant="h3">Some text here</Typography>
+      <Typography variant="h3">{text1}</Typography>
       <TextField
         label="Type something..."
         color="success"
         onChange={(e) => {
           console.log(e);
-          setText(e.target.value);
+          setText1(e.target.value);
         }}
       />
       <Box>
-        <Typography variant="h3">Another text here</Typography>
+        <Typography variant="h3">{text2}</Typography>
         <TextField
           label="Type somthing..."
           color="primary"
           onChange={(a) => {
             console.log(a);
-            setText(a.target.value);
+            setText2(a.target.value);
           }}
         />
+
+        <Box>
+          <Typography variant="h3">{text3}</Typography>
+          <TextField
+            label="Type somthing..."
+            color="primary"
+            onChange={(a) => {
+              console.log(a);
+              setText3(a.target.value);
+            }}
+          />
+        </Box>
       </Box>
     </Box>
   );
